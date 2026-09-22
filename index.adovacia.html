@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Evelyn Adria Castro Advocacia | Advocacia com clareza e compromisso</title>
+<meta name="description" content="Evelyn Adria Castro Advocacia. Atendimento personalizado, transparência e compromisso com cada cliente. Fale agora pelo WhatsApp.">
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Evelyn Adria Castro Advocacia">
+<meta property="og:description" content="Advocacia com clareza, transparência e atendimento personalizado.">
+<meta property="og:locale" content="pt_BR">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230d0c0a'/%3E%3Ctext x='50' y='68' font-size='58' font-family='Georgia,serif' fill='%23b8975a' text-anchor='middle'%3EE%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --black:#0d0c0a;
+  --black-2:#15130f;
+  --black-3:#1c1a15;
+  --gold:#b8965a;
+  --gold-light:#d8bb87;
+  --cream:#f6f2e9;
+  --gray:#9b9587;
+  --line:rgba(184,150,90,0.22);
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;scroll-padding-top:90px;}
+body{
+  background:var(--black);
+  color:var(--cream);
+  font-family:'Sora',sans-serif;
+  font-weight:300;
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit;}
+:focus-visible{outline:2px solid var(--gold-light);outline-offset:3px;}
+.wrap{max-width:1180px;margin:0 auto;padding:0 32px;}
+h1,h2,h3{font-family:'Fraunces',serif;font-weight:500;letter-spacing:-0.01em;color:var(--white,#f6f2e9);}
+.eyebrow{font-size:0.78rem;color:var(--gold);letter-spacing:0.04em;}
+.gold{color:var(--gold);}
+.muted{color:var(--gray);}
+
+/* ---------- Header ---------- */
+header{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  padding:22px 0;
+  background:rgba(13,12,10,0.72);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid transparent;
+  transition:border-color .4s ease, padding .3s ease;
+}
+header.scrolled{border-color:var(--line);padding:14px 0;}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;}
+.brand{font-family:'Fraunces',serif;font-size:1.15rem;letter-spacing:0.01em;color:var(--cream);}
+.brand span{color:var(--gold);}
+nav ul{display:flex;gap:38px;list-style:none;}
+nav a{font-size:0.92rem;color:var(--gray);transition:color .25s ease;position:relative;}
+nav a:hover,nav a:focus-visible{color:var(--cream);}
+.nav-cta{
+  border:1px solid var(--gold);color:var(--gold-light);
+  padding:10px 22px;border-radius:2px;font-size:0.88rem;
+  transition:background .25s ease,color .25s ease;
+}
+.nav-cta:hover{background:var(--gold);color:var(--black);}
+.burger{display:none;flex-direction:column;gap:5px;width:28px;z-index:200;}
+.burger span{height:1px;background:var(--cream);width:100%;transition:all .3s ease;}
+.burger.open span:nth-child(1){transform:translateY(6px) rotate(45deg);}
+.burger.open span:nth-child(2){opacity:0;}
+.burger.open span:nth-child(3){transform:translateY(-6px) rotate(-45deg);}
+
+.mobile-menu{
+  position:fixed;inset:0;background:var(--black-2);z-index:90;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:34px;
+  transform:translateY(-100%);transition:transform .45s cubic-bezier(.6,0,.2,1);
+}
+.mobile-menu.open{transform:translateY(0);}
+.mobile-menu a{font-family:'Fraunces',serif;font-size:1.5rem;color:var(--cream);}
+.mobile-menu .nav-cta{margin-top:10px;}
+
+/* ---------- Hero ---------- */
+.hero{
+  min-height:100vh;display:flex;align-items:center;
+  padding-top:110px;position:relative;
+  background:
+    radial-gradient(ellipse 900px 500px at 85% 10%, rgba(184,150,90,0.10), transparent 60%),
+    var(--black);
+}
+.hero .wrap{display:grid;grid-template-columns:1.1fr 0.6fr;gap:60px;align-items:end;}
+.hero-eyebrow{display:flex;align-items:center;gap:14px;margin-bottom:26px;}
+.hero-eyebrow .rule{width:44px;height:1px;background:var(--gold);}
+h1.title{font-size:clamp(2.4rem,5vw,4rem);line-height:1.08;font-weight:400;max-width:14ch;}
+h1.title em{font-style:italic;color:var(--gold-light);font-weight:400;}
+.hero-lede{margin-top:26px;max-width:46ch;color:var(--gray);font-size:1.05rem;}
+.hero-actions{display:flex;flex-wrap:wrap;gap:16px;margin-top:42px;}
+.btn{
+  display:inline-flex;align-items:center;gap:10px;
+  padding:16px 30px;border-radius:2px;font-size:0.95rem;
+  transition:transform .25s ease, background .25s ease, color .25s ease, border-color .25s ease;
+}
+.btn-primary{background:var(--gold);color:var(--black);}
+.btn-primary:hover{background:var(--gold-light);transform:translateY(-2px);}
+.btn-outline{border:1px solid var(--line);color:var(--cream);}
+.btn-outline:hover{border-color:var(--gold);color:var(--gold-light);transform:translateY(-2px);}
+.hero-side{border-left:1px solid var(--line);padding-left:34px;padding-bottom:8px;}
+.hero-side p{color:var(--gray);font-size:0.92rem;}
+.hero-side .num{font-family:'Fraunces',serif;color:var(--gold);font-size:1.6rem;display:block;margin-bottom:8px;}
+
+/* reveal on scroll */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .8s ease, transform .8s ease;}
+.reveal.in{opacity:1;transform:translateY(0);}
+
+/* ---------- Section shell ---------- */
+section{padding:120px 0;}
+.section-head{max-width:640px;margin-bottom:64px;}
+.section-head .eyebrow{display:block;margin-bottom:16px;}
+.section-head h2{font-size:clamp(1.9rem,3.4vw,2.7rem);font-weight:400;}
+
+/* ---------- About ---------- */
+.about-grid{display:grid;grid-template-columns:0.9fr 1fr;gap:70px;align-items:start;}
+.about-quote{
+  font-family:'Fraunces',serif;font-size:1.5rem;line-height:1.4;font-style:italic;
+  color:var(--gold-light);border-left:1px solid var(--gold);padding-left:28px;
+}
+.about-body p{color:var(--gray);margin-bottom:20px;font-size:1rem;}
+.about-body strong{color:var(--cream);font-weight:500;}
+
+/* ---------- Areas ---------- */
+.areas-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);}
+.area-card{
+  background:var(--black);padding:44px 34px;
+  transition:background .35s ease;position:relative;overflow:hidden;
+}
+.area-card:hover{background:var(--black-3);}
+.area-card .icon{width:38px;height:38px;margin-bottom:26px;color:var(--gold);transition:transform .35s ease;}
+.area-card:hover .icon{transform:translateY(-4px);}
+.area-card h3{font-size:1.15rem;font-weight:500;margin-bottom:12px;}
+.area-card p{color:var(--gray);font-size:0.92rem;}
+
+/* ---------- Differentials ---------- */
+.diff-list{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line);}
+.diff-item{background:var(--black);padding:38px;display:flex;gap:20px;align-items:flex-start;}
+.diff-item .icon{width:26px;height:26px;flex-shrink:0;color:var(--gold);margin-top:4px;}
+.diff-item h3{font-size:1.05rem;font-weight:500;margin-bottom:8px;}
+.diff-item p{color:var(--gray);font-size:0.92rem;}
+
+/* ---------- Contact ---------- */
+.contact-grid{display:grid;grid-template-columns:1fr 0.85fr;gap:70px;align-items:start;}
+.field{margin-bottom:22px;}
+.field label{display:block;font-size:0.82rem;color:var(--gray);margin-bottom:8px;}
+.field input,.field textarea{
+  width:100%;background:transparent;border:1px solid var(--line);border-radius:2px;
+  padding:14px 16px;color:var(--cream);font-family:inherit;font-size:0.95rem;
+  transition:border-color .25s ease;
+}
+.field input:focus,.field textarea:focus{border-color:var(--gold);}
+.field textarea{resize:vertical;min-height:110px;}
+.field .err{color:#c98a6b;font-size:0.78rem;margin-top:6px;min-height:16px;}
+.field input.invalid,.field textarea.invalid{border-color:#a5533c;}
+.form-status{font-size:0.88rem;color:var(--gold-light);margin-top:6px;min-height:20px;}
+.form-note{font-size:0.82rem;color:var(--gray);margin-top:18px;}
+
+.quick-card{border:1px solid var(--line);padding:30px;margin-bottom:1px;}
+.quick-card h3{font-size:0.98rem;font-weight:500;margin-bottom:6px;}
+.quick-card p{color:var(--gray);font-size:0.92rem;margin-bottom:16px;}
+.quick-link{font-size:0.88rem;color:var(--gold-light);border-bottom:1px solid var(--gold);padding-bottom:2px;}
+.quick-link:hover{color:var(--gold);}
+
+/* ---------- Footer ---------- */
+footer{border-top:1px solid var(--line);padding:70px 0 34px;}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:50px;margin-bottom:50px;}
+.footer-brand{font-family:'Fraunces',serif;font-size:1.2rem;margin-bottom:14px;}
+.footer-grid h4{font-size:0.82rem;color:var(--gray);margin-bottom:16px;letter-spacing:0.02em;}
+.footer-grid ul{list-style:none;}
+.footer-grid li{margin-bottom:10px;font-size:0.92rem;}
+.footer-grid a:hover{color:var(--gold-light);}
+.footer-bottom{border-top:1px solid var(--line);padding-top:26px;font-size:0.8rem;color:var(--gray);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;}
+
+/* ---------- Floating WhatsApp ---------- */
+.wa-float{
+  position:fixed;bottom:26px;right:26px;z-index:150;
+  width:60px;height:60px;border-radius:50%;
+  background:var(--gold);color:var(--black);
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 8px 24px rgba(0,0,0,0.45);
+  animation:wa-pulse 3.2s ease-in-out infinite;
+}
+.wa-float:hover{background:var(--gold-light);}
+.wa-float svg{width:28px;height:28px;}
+@keyframes wa-pulse{
+  0%,100%{box-shadow:0 8px 24px rgba(0,0,0,0.45),0 0 0 0 rgba(184,150,90,0.4);}
+  50%{box-shadow:0 8px 24px rgba(0,0,0,0.45),0 0 0 10px rgba(184,150,90,0);}
+}
+@media (prefers-reduced-motion: reduce){
+  .wa-float{animation:none;}
+  .reveal{transition:none;opacity:1;transform:none;}
+  html{scroll-behavior:auto;}
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width:900px){
+  .hero .wrap{grid-template-columns:1fr;}
+  .hero-side{border-left:none;border-top:1px solid var(--line);padding-left:0;padding-top:26px;}
+  .about-grid{grid-template-columns:1fr;gap:40px;}
+  .areas-grid{grid-template-columns:1fr 1fr;}
+  .diff-list{grid-template-columns:1fr;}
+  .contact-grid{grid-template-columns:1fr;}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:34px;}
+}
+@media (max-width:640px){
+  nav ul,.nav-cta{display:none;}
+  .burger{display:flex;}
+  .wrap{padding:0 22px;}
+  section{padding:80px 0;}
+  .areas-grid{grid-template-columns:1fr;}
+  .footer-grid{grid-template-columns:1fr;gap:30px;}
+  .wa-float{width:54px;height:54px;bottom:18px;right:18px;}
+  .hero-actions .btn{width:100%;justify-content:center;}
+}
+</style>
+</head>
+<body>
+
+<header id="siteHeader">
+  <div class="wrap nav-inner">
+    <a href="#topo" class="brand">Evelyn Adria Castro <span>Advocacia</span></a>
+    <nav aria-label="Navegação principal">
+      <ul>
+        <li><a href="#topo">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#areas">Áreas de atuação</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <a class="nav-cta" id="navWaBtn" href="#" target="_blank" rel="noopener">Fale pelo WhatsApp</a>
+    <button class="burger" id="burgerBtn" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#topo" class="mm-link">Início</a>
+  <a href="#sobre" class="mm-link">Sobre</a>
+  <a href="#areas" class="mm-link">Áreas de atuação</a>
+  <a href="#contato" class="mm-link">Contato</a>
+  <a class="btn btn-primary nav-cta-mobile" href="#" target="_blank" rel="noopener">Fale pelo WhatsApp</a>
+</div>
+
+<main id="topo">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <div class="hero-eyebrow"><span class="rule"></span><span class="eyebrow">Advocacia</span></div>
+        <h1 class="title">Orientação jurídica com <em>clareza</em> e responsabilidade</h1>
+        <p class="hero-lede">Evelyn Adria Castro Advocacia oferece atendimento próximo e transparente, conduzindo cada caso com atenção às particularidades de cada cliente.</p>
+        <div class="hero-actions">
+          <a href="#" id="heroWaBtn" class="btn btn-primary" target="_blank" rel="noopener">Fale pelo WhatsApp</a>
+          <a href="#sobre" class="btn btn-outline" id="heroAboutBtn">Conheça o escritório</a>
+        </div>
+      </div>
+      <div class="hero-side reveal">
+        <span class="num">Atendimento</span>
+        <p>Conversas claras, linguagem acessível e retorno objetivo em cada etapa do atendimento.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre">
+    <div class="wrap">
+      <div class="about-grid">
+        <div class="reveal">
+          <p class="eyebrow" style="margin-bottom:18px;display:block;">Sobre o escritório</p>
+          <p class="about-quote">Advocacia é, antes de tudo, uma relação de confiança.</p>
+        </div>
+        <div class="about-body reveal">
+          <p><strong>Evelyn Adria Castro Advocacia</strong> atua com foco no atendimento personalizado, buscando compreender de forma clara a situação de cada cliente antes de indicar qualquer caminho jurídico.</p>
+          <p>O trabalho é conduzido com transparência sobre prazos, procedimentos e possibilidades, sempre respeitando as particularidades de cada caso, sem promessas sobre resultados.</p>
+          <p>Este espaço foi criado para facilitar o primeiro contato: as informações abaixo podem ser atualizadas conforme o escritório definir sua atuação de forma mais específica.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="areas">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Áreas de atuação</span>
+        <h2>Como podemos ajudar</h2>
+      </div>
+    </div>
+    <div class="wrap">
+      <!-- EDITÁVEL: substitua título/descrição de cada card pelas áreas reais de atuação -->
+      <div class="areas-grid">
+        <div class="area-card reveal">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M12 3v18M4 8l4-5 4 5M16 8l4-5 4 5" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 20h6M15 20h6" stroke-linecap="round"/></svg>
+          <h3>Direito Civil</h3>
+          <p>Orientação em questões contratuais, obrigações e relações civis do dia a dia.</p>
+        </div>
+        <div class="area-card reveal">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M20 7H4a1 1 0 00-1 1v11a1 1 0 001 1h16a1 1 0 001-1V8a1 1 0 00-1-1zM8 7V5a2 2 0 012-2h4a2 2 0 012 2v2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>Direito Empresarial</h3>
+          <p>Suporte jurídico a empresas em suas relações comerciais e organizacionais.</p>
+        </div>
+        <div class="area-card reveal">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M17 20h5v-1a4 4 0 00-4-4M9 20H4v-1a4 4 0 014-4m6-6a3 3 0 11-6 0 3 3 0 016 0zm6 2a2.5 2.5 0 10-2-4m-10 4a2.5 2.5 0 112-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>Direito de Família</h3>
+          <p>Acompanhamento em questões familiares, com atenção e discrição.</p>
+        </div>
+        <div class="area-card reveal">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>Direito do Consumidor</h3>
+          <p>Defesa de direitos em relações de consumo e negociações com fornecedores.</p>
+        </div>
+        <div class="area-card reveal">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M4 21V7l8-4 8 4v14M9 21v-6h6v6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>Direito Imobiliário</h3>
+          <p>Assessoria em contratos, locações e questões relacionadas a imóveis.</p>
+        </div>
+        <div class="area-card reveal">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M12 3l9 4.5-9 4.5-9-4.5L12 3zM3 7.5V17l9 4.5 9-4.5V7.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>Consultoria Jurídica</h3>
+          <p>Orientação preventiva para decisões pessoais e profissionais mais seguras.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="diferenciais">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Diferenciais</span>
+        <h2>Um atendimento pensado para você</h2>
+      </div>
+      <div class="diff-list">
+        <div class="diff-item reveal">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6" stroke-linecap="round"/></svg>
+          <div><h3>Atendimento personalizado</h3><p>Cada caso é analisado individualmente, com atenção à realidade de quem procura o escritório.</p></div>
+        </div>
+        <div class="diff-item reveal">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 21s-7-4.35-7-10a5 5 0 019-3 5 5 0 019 3c0 5.65-7 10-7 10" stroke-linejoin="round"/></svg>
+          <div><h3>Compromisso com o cliente</h3><p>Acompanhamento próximo em cada etapa, mantendo o cliente informado sobre o andamento.</p></div>
+        </div>
+        <div class="diff-item reveal">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="4" y="4" width="16" height="16" rx="1"/><path d="M8 9h8M8 13h8M8 17h5" stroke-linecap="round"/></svg>
+          <div><h3>Atendimento profissional</h3><p>Condução ética e cuidadosa de cada atendimento, do primeiro contato ao acompanhamento.</p></div>
+        </div>
+        <div class="diff-item reveal">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div><h3>Clareza e transparência</h3><p>Explicações objetivas sobre prazos, procedimentos e possibilidades, sem termos técnicos desnecessários.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Contato</span>
+        <h2>Entre em contato</h2>
+      </div>
+      <div class="contact-grid">
+        <form id="contactForm" class="reveal" novalidate>
+          <div class="field">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" autocomplete="name" required>
+            <div class="err" id="err-nome"></div>
+          </div>
+          <div class="field">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+            <div class="err" id="err-email"></div>
+          </div>
+          <div class="field">
+            <label for="telefone">Telefone / WhatsApp</label>
+            <input type="tel" id="telefone" name="telefone" autocomplete="tel" required>
+            <div class="err" id="err-telefone"></div>
+          </div>
+          <div class="field">
+            <label for="assunto">Assunto</label>
+            <input type="text" id="assunto" name="assunto" required>
+            <div class="err" id="err-assunto"></div>
+          </div>
+          <div class="field">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+            <div class="err" id="err-mensagem"></div>
+          </div>
+          <button type="submit" class="btn btn-primary" id="submitBtn">Enviar mensagem pelo WhatsApp</button>
+          <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+          <p class="form-note">Ao enviar, sua mensagem será aberta diretamente no WhatsApp com os dados preenchidos. Nenhuma informação é armazenada neste site.</p>
+        </form>
+
+        <div class="reveal">
+          <div class="quick-card">
+            <h3>WhatsApp</h3>
+            <p>+55 11 93916-0768</p>
+            <a class="quick-link" id="quickWaBtn" href="#" target="_blank" rel="noopener">Conversar agora</a>
+          </div>
+          <div class="quick-card">
+            <h3>Telefone</h3>
+            <p>+55 11 93916-0768</p>
+            <a class="quick-link" href="tel:+5511939160768">Ligar agora</a>
+          </div>
+          <div class="quick-card">
+            <h3>E-mail</h3>
+            <p>contato@eacastro.com.br</p>
+            <a class="quick-link" href="mailto:contato@eacastro.com.br">Enviar e-mail</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Evelyn Adria Castro <span class="gold">Advocacia</span></div>
+        <p class="muted" style="font-size:0.9rem;max-width:32ch;">Atendimento com clareza, transparência e compromisso com cada cliente.</p>
+      </div>
+      <div>
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#topo">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#areas">Áreas de atuação</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li>WhatsApp: <a href="#" id="footerWaLink" target="_blank" rel="noopener">+55 11 93916-0768</a></li>
+          <li>Telefone: <a href="tel:+5511939160768">+55 11 93916-0768</a></li>
+          <li>E-mail: <a href="mailto:contato@eacastro.com.br">contato@eacastro.com.br</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Evelyn Adria Castro Advocacia. Todos os direitos reservados.</span>
+      <span>Conteúdo institucional — sem promessa de resultados.</span>
+    </div>
+  </div>
+</footer>
+
+<a href="#" id="floatWaBtn" class="wa-float" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1s-.5-.1-.7.1-.7.9-.9 1.1-.4.2-.7.1a6.7 6.7 0 01-3.3-2.9c-.2-.3-.1-.5.1-.7l.5-.6c.1-.2.2-.4.1-.6-.1-.3-.9-2.1-1.1-2.5s-.4-.4-.6-.4h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.2.2 2.1 3.3 5.2 4.4 2.6 1 2.6.7 3.1.6.5-.1 1.6-.6 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.5-.3z"/><path d="M12 2a10 10 0 00-8.6 15.1L2 22l4.9-1.3A10 10 0 1012 2zm0 18.2a8.1 8.1 0 01-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2z"/></svg>
+</a>
+
+<script>
+(function(){
+  var PHONE = "5511939160768";
+
+  function waUrl(text){
+    return "https://wa.me/" + PHONE + "?text=" + encodeURIComponent(text);
+  }
+
+  var simpleMsg = "Olá, Evelyn! Gostaria de entrar em contato pelo site.";
+  var simpleUrl = waUrl(simpleMsg);
+  ["navWaBtn","heroWaBtn","quickWaBtn","footerWaLink","floatWaBtn"].forEach(function(id){
+    var el = document.getElementById(id);
+    if(el) el.setAttribute("href", simpleUrl);
+  });
+  document.querySelectorAll(".nav-cta-mobile").forEach(function(el){
+    el.setAttribute("href", simpleUrl);
+  });
+
+  // header scroll state
+  var header = document.getElementById("siteHeader");
+  window.addEventListener("scroll", function(){
+    header.classList.toggle("scrolled", window.scrollY > 20);
+  });
+
+  // mobile menu
+  var burger = document.getElementById("burgerBtn");
+  var menu = document.getElementById("mobileMenu");
+  function closeMenu(){
+    menu.classList.remove("open");
+    burger.classList.remove("open");
+    burger.setAttribute("aria-expanded","false");
+  }
+  burger.addEventListener("click", function(){
+    var open = menu.classList.toggle("open");
+    burger.classList.toggle("open", open);
+    burger.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+  menu.querySelectorAll(".mm-link").forEach(function(a){
+    a.addEventListener("click", closeMenu);
+  });
+
+  // smooth scroll for "Conheça o escritório"
+  document.getElementById("heroAboutBtn").addEventListener("click", function(e){
+    e.preventDefault();
+    document.getElementById("sobre").scrollIntoView({behavior:"smooth"});
+  });
+
+  // reveal on scroll
+  var revealEls = document.querySelectorAll(".reveal");
+  if("IntersectionObserver" in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){
+          entry.target.classList.add("in");
+          io.unobserve(entry.target);
+        }
+      });
+    }, {threshold:0.15});
+    revealEls.forEach(function(el){ io.observe(el); });
+  } else {
+    revealEls.forEach(function(el){ el.classList.add("in"); });
+  }
+
+  // year
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  // contact form validation + whatsapp message build
+  var form = document.getElementById("contactForm");
+  var status = document.getElementById("formStatus");
+
+  function setError(fieldId, msg){
+    var el = document.getElementById(fieldId);
+    var err = document.getElementById("err-" + fieldId);
+    if(msg){
+      el.classList.add("invalid");
+      err.textContent = msg;
+    } else {
+      el.classList.remove("invalid");
+      err.textContent = "";
+    }
+  }
+
+  function validate(){
+    var ok = true;
+    var nome = document.getElementById("nome").value.trim();
+    var email = document.getElementById("email").value.trim();
+    var telefone = document.getElementById("telefone").value.trim();
+    var assunto = document.getElementById("assunto").value.trim();
+    var mensagem = document.getElementById("mensagem").value.trim();
+
+    if(nome.length < 2){ setError("nome","Informe seu nome completo."); ok = false; } else setError("nome","");
+
+    var emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    if(!emailOk){ setError("email","Informe um e-mail válido."); ok = false; } else setError("email","");
+
+    var telDigits = telefone.replace(/\D/g,"");
+    if(telDigits.length < 10){ setError("telefone","Informe um telefone válido com DDD."); ok = false; } else setError("telefone","");
+
+    if(assunto.length < 2){ setError("assunto","Informe o assunto."); ok = false; } else setError("assunto","");
+
+    if(mensagem.length < 5){ setError("mensagem","Escreva sua mensagem."); ok = false; } else setError("mensagem","");
+
+    return ok;
+  }
+
+  form.addEventListener("submit", function(e){
+    e.preventDefault();
+    if(!validate()){
+      status.textContent = "Verifique os campos destacados.";
+      return;
+    }
+    var nome = document.getElementById("nome").value.trim();
+    var email = document.getElementById("email").value.trim();
+    var telefone = document.getElementById("telefone").value.trim();
+    var assunto = document.getElementById("assunto").value.trim();
+    var mensagem = document.getElementById("mensagem").value.trim();
+
+    var texto =
+      "Olá, Evelyn! Gostaria de entrar em contato.\n\n" +
+      "Nome: " + nome + "\n" +
+      "E-mail: " + email + "\n" +
+      "Telefone: " + telefone + "\n" +
+      "Assunto: " + assunto + "\n\n" +
+      "Mensagem:\n" + mensagem;
+
+    status.textContent = "Abrindo o WhatsApp...";
+    window.open(waUrl(texto), "_blank", "noopener");
+  });
+
+  // clear error while typing
+  ["nome","email","telefone","assunto","mensagem"].forEach(function(id){
+    document.getElementById(id).addEventListener("input", function(){
+      setError(id, "");
+    });
+  });
+})();
+</script>
+</body>
+</html>
